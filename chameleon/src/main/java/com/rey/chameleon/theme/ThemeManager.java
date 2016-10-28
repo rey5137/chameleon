@@ -1,4 +1,4 @@
-package com.rey.chameleon;
+package com.rey.chameleon.theme;
 
 import android.content.Context;
 import android.content.res.TypedArray;
@@ -9,8 +9,7 @@ import android.util.AttributeSet;
 import android.util.SparseArray;
 import android.view.View;
 
-import com.rey.chameleon.OnThemeChangedEvent;
-import com.rey.chameleon.R;
+import com.rey.chameleon.ChameleonConfig;
 
 import java.util.ArrayList;
 import java.util.List;
@@ -45,10 +44,9 @@ public class ThemeManager {
      * @return The styleId.
      */
     public static int getStyleId(Context context, AttributeSet attrs, int defStyleAttr, int defStyleRes){
-        TypedArray a = context.obtainStyledAttributes(attrs, R.styleable.Gecko, defStyleAttr, defStyleRes);
-        int styleId = a.getResourceId(R.styleable.Gecko_gecko_styleId, 0);
+        TypedArray a = context.obtainStyledAttributes(attrs, new int[]{ChameleonConfig.get().getStyleAttrId()}, defStyleAttr, defStyleRes);
+        int styleId = a.getResourceId(0, 0);
         a.recycle();
-
         return styleId;
     }
 

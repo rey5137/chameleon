@@ -1,6 +1,9 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
+    <attr name="styleId" format="reference"/>
+    <attr name="fontPath" format="reference"/>
+
     <declare-styleable name="View">
         <attr name="android:background" />
         <attr name="android:backgroundTint" />
@@ -109,10 +112,6 @@
         <attr name="android:dropDownVerticalOffset" />
         <attr name="android:dropDownWidth" />
         <attr name="android:popupBackground" />
-    </declare-styleable>
-
-    <declare-styleable name="Gecko">
-        <attr name="gecko_styleId" format="reference"/>
     </declare-styleable>
 
 </resources>

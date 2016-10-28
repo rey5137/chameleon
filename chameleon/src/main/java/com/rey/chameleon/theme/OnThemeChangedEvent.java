@@ -1,4 +1,4 @@
-package com.rey.chameleon;
+package com.rey.chameleon.theme;
 
 /**
  * Created by Rey on 10/25/2016.

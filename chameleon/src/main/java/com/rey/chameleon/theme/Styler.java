@@ -1,4 +1,4 @@
-package com.rey.chameleon;
+package com.rey.chameleon.theme;
 
 import android.view.View;
 

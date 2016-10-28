@@ -1,4 +1,4 @@
-package com.rey.chameleon;
+package com.rey.chameleon.theme;
 
 import android.support.annotation.Nullable;
 import android.view.View;
@@ -8,13 +8,13 @@ import java.lang.ref.WeakReference;
 /**
  * Created by Rey on 10/28/2016.
  */
-class ViewStyleDelegate implements View.OnAttachStateChangeListener, ThemeManager.OnThemeChangedListener{
+public class ViewStyleDelegate implements View.OnAttachStateChangeListener, ThemeManager.OnThemeChangedListener{
 
     private int mStyleId;
     private WeakReference<View> mViewRef;
     private int mCurrentStyle = ThemeManager.STYLE_UNDEFINED;
 
-    ViewStyleDelegate(View view, int styleId){
+    public ViewStyleDelegate(View view, int styleId){
         mViewRef = new WeakReference<>(view);
         mStyleId = styleId;
     }

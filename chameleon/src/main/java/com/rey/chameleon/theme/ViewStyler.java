@@ -1,4 +1,4 @@
-package com.rey.chameleon;
+package com.rey.chameleon.theme;
 
 import android.annotation.SuppressLint;
 import android.content.Context;
@@ -14,6 +14,8 @@ import android.view.ViewGroup;
 import android.widget.AutoCompleteTextView;
 import android.widget.ImageView;
 import android.widget.TextView;
+
+import com.rey.chameleon.R;
 
 /**
  * Created by Rey on 10/26/2016.
